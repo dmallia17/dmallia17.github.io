@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![ProfilePic](assets/TheManTheMythTheLegend.jpg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+### Hello, world, I'm Dan (Daniel/Danny/Dan, all fine by me).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+In a nutshell, I am a recent graduate from Hunter College's Computer Science
+Master's program, currently searching for work as an AI engineer. Aside from
+long walks on the beach and pina coladas (ha-ha), if I'm not obsessing
+over a new concept, algorithm or language (sorry but not sorry, functional
+programming languages are like candy), I'm playing guitar or drums, taking in
+some nature with the wife, or playing a strategy game - dare I say it, even a
+**video** game (dun-dun-dun).
 
 
-[jekyll-organization]: https://github.com/jekyll
