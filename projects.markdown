@@ -22,7 +22,7 @@ presence of castles which can be captured by the enemy to win the game, as
 well as the possibility of moving up to ALL of your pieces in a single turn.
 The last component (read as *enormous branching factor*) was certainly going
 to complicate our plan to work up from search based agents to reinforcement
-learning if there was time.
+learning (RL) if there was time.
 
 Ultimately we implemented game AI depending on
 two major components. First, we employed local search (hill-climbing and
@@ -117,6 +117,22 @@ the pump kick on in my house, was simply magical.
 
 
 ### [Easy21](https://github.com/dmallia17/Easy21)
+![Easy21 Value Function](assets/Easy21.png)
+###### The value function learned via Monte Carlo control for the Easy21 game (a blackjack derivative), where the back of the plot intuitively corresponds to high value states where the player has a high sum and the dealer will need to hit multiple times to come close and hopefully (for the dealer) not go bust in the process.
+
+When I did an independent study in reinforcement learning (RL), I watched my
+way through David Silver's famous and excellent course on RL on
+[YouTube](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ).
+At the time I did some other small projects to get hands on experience with
+implementing RL algorithms, and so I filed away the Easy21 assignment he
+assigned in that course for revisiting. More recently, wanting a refresh on RL
+and a fun project for myself, I took on implementing a solution to the
+assignment in Python and was reminded of why RL can be so fun: watching your
+agent learn how to comprehensively contend with an environment is just so
+compelling. Sure, the challenge wasn't on the order of *Go* but it's fun to
+see what you can get up to with a little Python and a laptop.
+
+
 
 
 
