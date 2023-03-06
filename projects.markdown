@@ -83,7 +83,25 @@ benefits and costs of outdoor cats in urban areas.
 
 
 ### [Road Surface Disparity Estimation](https://github.com/joshcwinton/RoadSurfaceDisparityEstimation)
+![Disparity Map](assets/DisparityMap.png)
+###### A disparity map of a roadway scene generated via stereo reconstruction, produced by our Python implementation of a recent algorithm tailored towards road surfaces. On the left are some trees, the middle is the road and there are cars parked off to the right.
 
+For a final project in the computer vision course at Hunter College, my
+teammates and I wanted to work on something a) in the realm of "classical"
+computer vision and b) that was directly applicable in the NYC context.
+Aside from pizza, bagels and curse words, what else is NYC known for but
+potholes and that last one could be tackled by a vision algorithm designed for
+3D reconstruction of roads using stereo cameras. The short version is we
+implemented ~1.5 of a chain of 3 papers which gradually developed a stereo
+approach, which the authors rightly argued is more sensical than more expenive
+equipment, and were able to achieve useful disparity maps using Python and the
+OpenCV package. The unfortunate result was that, at least in our experience,
+the proposed algorithm was untenable in Python, taking far too long to be
+useful in generating larger 3D models of a road. However, this project is on
+my to-revisit list, as it's possible we may have run into some issue in how we
+used OpenCV, and I'm curious if I can recreate it with better performance in
+Julia, a language that's on my to-learn list (I guess I have a few lists to
+manage here...).
 
 ### [Synthesis](https://github.com/tanj299/synthesis)
 ![Garden](assets/Synthesis.JPG)
