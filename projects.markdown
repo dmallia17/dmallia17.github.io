@@ -86,6 +86,31 @@ benefits and costs of outdoor cats in urban areas.
 
 
 ### [Synthesis](https://github.com/tanj299/synthesis)
+![Garden](assets/Synthesis.JPG)
+###### Isn't that the most beautiful synthesis (*cough-cough* hence the name) of nature and technology you've ever seen? This ~~monstrosity~~ beauty is the automated garden, complete with paper towels in case of water tubes gone wild, we created, all controllable via the web or mobile app.
+
+All Hunter College computer science students have to do a major capstone
+project to achieve their Bachelor's degree, ideally one that spans multiple
+languages and technologies. For my group, it seemed what better way to achieve
+this breadth of work than by working with hardware and software; inspired by
+[this video](https://youtu.be/O_Q1WKCtWiA) on an Arduino garden project, we
+decided to tackle the challenge of building an automated garden which could
+be monitored and controlled over the web or from a mobile app.
+
+In our group of four students, I focused on the hardware-gardenware(?) side,
+which meant a combination of two platforms and two languages:
+- An Arduino - programmed in, you guessed it, Arduino - for interacting with
+analog and digital sensors alike, as well a relay for controlling the more
+"high-powered" components, a lamp and a water pump.
+- A Raspberry Pi running a Python script to a) talk with / control the
+Arduino, b) talk with the backend server, and c) of course, take pictures
+with the attached camera, because who doesn't want an instant snapshot of
+their plants on demand?!
+
+I had tinkered with Arduino before this project, and working with hardware,
+from water pumps to robotic arms, is always exciting, but something about
+watching our groupmate request watering from the mobile app, and watching
+the pump kick on in my house, was simply magical.
 
 
 ### [Multi-aRmed Bandits](https://github.com/dmallia17/Multi-aRmed_Bandits)
