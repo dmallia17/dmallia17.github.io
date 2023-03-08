@@ -21,7 +21,7 @@ movement patterns, terrain which can restrict attack and defense, the
 presence of castles which can be captured by the enemy to win the game, as
 well as the possibility of moving up to ALL of your pieces in a single turn.
 The last component (read as *enormous branching factor*) was certainly going
-to complicate our plan to work up from search based agents to reinforcement
+to complicate our plan to work up from search-based agents to reinforcement
 learning (RL) if there was time.
 
 Ultimately we implemented game AI depending on
@@ -39,7 +39,7 @@ would have benefited from using a language other than Python, but it enabled
 fast development and offered handy features like generators for generating the
 vast breadth of multi-piece moves before we finally focused on just single
 piece moves for our proof of concept. While we didn't have the time to really
-get to an RL based approach given the sheer breadth of work - we even wrote a
+get to an RL-based approach given the sheer breadth of work - we even wrote a
 gameplay viewer so we could play back AI games for review! - the project was a
 success and an absolute blast. 
 
@@ -57,7 +57,7 @@ street) kindly stepped in to suggest a topic.
 ###### Cocoa the cat. Let the Internet karma flow in.
 
 While simulation has been conducted for understanding urban cat population
-trends under different policies for controlling their growth - ranging
+trends under different policies for controlling their growth, ranging
 from tragic kill programs to trap-hysterectomy/vasectomy-release programs,
 these projects were more focused on large population trends and used
 individual-based simulations where individuals (here, cats) could change
@@ -93,15 +93,15 @@ Aside from pizza, bagels and curse words, what else is NYC known for but
 potholes and that last one could be tackled by a vision algorithm designed for
 3D reconstruction of roads using stereo cameras. The short version is we
 implemented ~1.5 of a chain of 3 papers which gradually developed a stereo
-approach, which the authors rightly argued is more sensical than more expenive
-equipment, and were able to achieve useful disparity maps using Python and the
-OpenCV package. The unfortunate result was that, at least in our experience,
-the proposed algorithm was untenable in Python, taking far too long to be
-useful in generating larger 3D models of a road. However, this project is on
-my to-revisit list, as it's possible we may have run into some issue in how we
-used OpenCV, and I'm curious if I can recreate it with better performance in
-Julia, a language that's on my to-learn list (I guess I have a few lists to
-manage here...).
+approach, which the authors rightly argued is more sensical than more expensive
+equipment, and we were able to achieve useful disparity maps using Python and
+the OpenCV package. The unfortunate result was that, at least in our
+experience, the proposed algorithm was untenable in Python, taking far too
+long to be useful in generating larger 3D models of a road. However, this
+project is on my to-revisit list, as it's possible we may have run into some
+issue in how we used OpenCV, and I'm curious if I can recreate it with better
+performance in Julia, a language that's on my to-learn list (I guess I have a
+few lists to manage here...).
 
 ### [Synthesis](https://github.com/tanj299/synthesis)
 ![Garden](assets/Synthesis.JPG)
@@ -142,7 +142,7 @@ through Richard Sutton and Andrew Barto's "Reinforcement Learning" (2nd ed.).
 I distinctly remember enjoying the second chapter when I first read it in an
 independent study, as it does a nice job of building you up to understanding
 the "full" RL problem context, and introducing you to ideas of exploration
-and updates. Fresh from my thesis work where I had used the straightforward
+and estimates. Fresh from my thesis work where I had used the straightforward
 but powerful R shiny package to make an interface for working with
 Bayesian networks, I figured why not pop 2 balloons with one stone (leave the
 birds alone!) and get my RL refresh while sharpening my R / shiny skills.
