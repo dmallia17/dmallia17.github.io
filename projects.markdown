@@ -132,6 +132,27 @@ the pump kick on in my house, was simply magical.
 
 
 ### [Multi-aRmed Bandits](https://github.com/dmallia17/Multi-aRmed_Bandits)
+![Bandits Interface](assets/BatchScreenshot.png)
+###### A sample of my R shiny interface being used to recreate one of the bandits evaluations from the venerable Sutton and Barto Reinforcement Learning (2nd ed.) book.
+
+After a semester absorbed with simulation and completing my thesis, which
+revolved around Bayesian networks and discretization, I wanted a refresh
+on reinforcement learning (RL) and figured I could quickly skim my way
+through Richard Sutton and Andrew Barto's "Reinforcement Learning" (2nd ed.).
+I distinctly remember enjoying the second chapter when I first read it in an
+independent study, as it does a nice job of building you up to understanding
+the "full" RL problem context, and introducing you to ideas of exploration
+and updates. Fresh from my thesis work where I had used the straightforward
+but powerful R shiny package to make an interface for working with
+Bayesian networks, I figured why not pop 2 balloons with one stone (leave the
+birds alone!) and get my RL refresh while sharpening my R / shiny skills.
+With this in mind, I made a demo GUI with which anyone could tinker and
+either re-create some of the experiments shown in the book or work on their
+own to see how the selected learning approach (estimate updates, action
+selection, and optimistic values) fairs in different problem contexts
+(stationary or non-stationary, number of arms, reward means and variances).
+Once again the shiny package made it fun to create a nice little interface,
+and R and ggplot2 (for plotting) are always satisfying.
 
 
 ### [Easy21](https://github.com/dmallia17/Easy21)
