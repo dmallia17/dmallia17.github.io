@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Real Time Team Coding"
-date:       2023-03-27 21:40:00 -0500
+date:       2023-03-27 21:40:00 -04:00
 categories: personal
 ---
 
