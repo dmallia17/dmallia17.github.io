@@ -30,13 +30,15 @@ itself.
 ### Contributions, Goals and Related Work
 My thesis puts forward four major contributions:
 1. A "pipeline" known as "Unsupervised Learning under Uncertainty
-(U<sup>2</sup>)" for preparing data and learning BNs
+(U<sup>2</sup>)" for preparing data and learning BNs for enabling prediction,
+decision making and discovery in the face of difficult scenarios and limited
+data
 2. An exploration of existing discretization methods, proposal of new methods
 and a novel (to my knowledge) evaluation of one of these methods against
 other options, considering impact on BN structure learning
-3. Evaluation and application of the (U<sup>2</sup>) pipeline, particularly
-applied to the task of predicting and preventing preterm birth utilizing the
-nuMoM2b dataset
+3. Evaluation and application of the U<sup>2</sup> pipeline, particularly
+and novelly applied to the task of predicting and preventing preterm birth utilizing the
+Nulliparous Pregnancy Outcomes Study: Monitoring Mothers-to-be (nuMoM2b) dataset
 4. A user-friendly GUI, known as Bayesian Network Inspector, for inspection
 of and inference with BNs learned following this pipeline
 
@@ -57,25 +59,24 @@ became invaluable for setting up extensive discretization experiments.)
 This decision was primarily motivated by extensive support for Bayesian network
 learning, namely via the excellent ```bnlearn``` package, around which much of
 my work was based.
-**Full transparency: my body of code developed for the Distributed AI Research (DAIR) lab and for this thesis is currently private.**
+**Full transparency: my body of code developed for the Distributed AI Research (DAIR) lab at Hunter College and for this thesis is currently private.**
 
 Second, why did I work on these contributions?
-In my time working on the Nulliparous Pregnancy Outcomes Study: Monitoring
-Mothers-to-be (nuMoM2b) data in the DAIR lab at Hunter College,
+In my time working on the nuMoM2b data in the DAIR lab,
 I came to understand that for the challenge of predicting and preventing
 preterm birth there are four goals that need to be met.
 These likely hold for any machine learning project, but whereas for the
 medical context all four are critical, each may take on different weight
-depending on the task. These are:
+depending on the project. These are:
 1. Prediction - here, predicting if preterm birth or another adverse pregnancy
-outcome might occur.
+outcome might occur
 2. Decision making - deciding which tests or treatments might be helpful or
-optimal for a given pregnancy.
+optimal for a given pregnancy
 3. Discovery - while it is important to refer to existing medical knowledge,
-doctors have hope that machine learning will uncover *new* patterns.
+doctors have hope that machine learning will uncover *new* patterns
 4. Transparency and explainability - modelers, doctors and patients alike must
 be able to understand how we arrived at a certain model and the predictions
-and decisions it supports; this is also critical in avoiding issues of bias.
+and decisions it supports; this is also critical in avoiding issues of bias
 
 The related literature section discusses some approaches that might be used to
 meet these goals, and some advantages and disadvantages of each.
@@ -91,7 +92,7 @@ such as preterm/term birth because of gestational age estimates), are all
 problematic and only made more difficult given that preterm birth and
 other adverse pregnancy outcomes are not well understood.  
 In this context, working within the realm of probabilistic modeling,
-using only discrete (a.k.a. nominal categorical) data to learn Bayesian
+using only discrete (by that I mean nominal categorical) data to learn Bayesian
 networks in an unsupervised approach, offers a method to meet all four of the
 above goals in highly desirable fashion.
 
@@ -175,14 +176,14 @@ colorful edges showing learning failures when learning with mixed data).
 
 ![Mixed](assets/Thesis/healthcaremixed.png)
 
-### Evaluation of (U<sup>2</sup>)
+### Evaluation of U<sup>2</sup>
 Studying preterm birth with the nuMoM2b dataset may have been a primary
 motivation for my work but a fair evaluation of the proposed pipeline
 called for more than testing on just nuMoM2b, a very difficult context.
 Looking for another dataset with the same needs (prediction, decision
 making, discovery and explainability) and some known performance
 benchmarks, I worked on the
-[Student Performance dataset from UCI](https://archive.ics.uci.edu/ml/datasets/Student+Performance).
+[Student Performance dataset from the UCI repository](https://archive.ics.uci.edu/ml/datasets/Student+Performance).
 This evaluation proved to be a success story, with prediction performance
 comparable to supervised learning alternatives, and with discovery and
 transparency that laid bare connections in the dataset that were only hinted
@@ -216,12 +217,12 @@ and I think they have great potential to be the explainable AI needed in
 healthcare, but more research and *extensive* evaluation is required.
 The same need for more development is present for discretization, which can
 enable learning of simple BN models.
-The (U<sup>2</sup>) pipeline, pipeline applications (Student Performance and
+The U<sup>2</sup> pipeline, pipeline applications (Student Performance and
 nuMoM2b), BN Inspector, and discretization algorithms and evaluations I put
 forward in my thesis are my own humble contributions to this progress.
 My greatest regret with my thesis is that I did not have time to conduct even
 more experiments, but if you examine my document, you'll see how much space
-can be consumed just trying to unpack a couple of good experiments.  
+is required just to unpack a couple of good experiments.  
 
 
 
