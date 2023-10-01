@@ -6,6 +6,21 @@ permalink: /projects/
 
 The great hall of projects, big and small, in no particular order.
 
+### [Google Data Analytics Course Capstone: Cyclistic Bike-Share Analysis](CyclisticBike-ShareAnalysis.html)
+**Date: September 2023**
+![Cyclistic](assets/CasualStartAndEndTimes.png)
+###### A rather unusual plot I created for examining occurrences of bike ride hour start and end pairs, in trying to understand the differences between casual riders and Cyclistic members.
+
+I recently completed Google's excellent Data Analytics Certificate program on Coursera, which covers a lot of material - spreadsheets, SQL, Tableau - and a subject close to my heart, the R programming language.
+Completing a "capstone project" is an optional part of the course, but never one to turn down a fun challenge, I decided to take the plunge and tackle one of the offered business challenges.
+Clicking on the title above will bring you to my hosted R Notebook with my full, end-to-end reproducible data analysis workflow, from initial questions to cleaning, analysis and conclusions.
+If you'd like to check out the associated repository, you can click [here](https://github.com/dmallia17/CyclisticBike-ShareAnalysis).
+
+In this scenario, the task was to understand differences between casual riders (those who buy a single ride or day pass) and membership riders for a fictional company, Cyclistic, and draw conclusions for what additional data might be needed or what actions could be taken in preparation for a campaign to convert casual riders to members.
+In practice, the data used for this scenario was that of Divvy's Chicago bike-sharing data, and I chose to examine the last full year of data, 2022, which constituted over 5 million rows.
+Given this amount of data, SQL would have been a great choice - and I may yet revisit an alternative take on the project using SQL - but I figured I would put some of my new-found tidyverse skills to the test in R, and it was a great experience.
+
+
 ### [FeudalAI](https://github.com/dmallia17/FeudalAI)
 ![Feudal](assets/FeudalSetup1.png)
 ###### A screenshot of an initial setup in Feudal. There are two players, Blue and Yellow, a variety of piece types denoted by two symbol identifiers (e.g. Knight 1 = K1 or Pikemen 4 = P4), a castle for each player (Cyan = the castle green/entrance, Red = heart of the castle) and terrain which makes the game more complex than Chess (green = mountains, white = rough terrain). A basic terminal app sufficed for our AI focus, so it's not quite Call of Duty. 
