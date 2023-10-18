@@ -142,6 +142,12 @@ gameplay viewer so we could play back AI games for review! - the project was a
 success and an absolute blast.
 
 
+### [The Room Assignment Problem](https://github.com/dmallia17/CSCI79524Presentation/tree/main)
+**Date: November 2021**
+
+For a presentation in Hunter's Parallel Computing course, I created a demonstration of parallelizing solving the room assignment problem (assigning pairs of students to dorm rooms given a pairwise student "incompatibility matrix") using simulated annealing local search, in C with Open MPI.
+For as much as we all tend to reach for Python for AI applications, it was really neat to see how a highly efficient and parallel implementation of this classic algorithm could be created so simply in C.
+
 ### [Road Surface Disparity Estimation](https://github.com/joshcwinton/RoadSurfaceDisparityEstimation)
 **Date: May 2020**
 ![Disparity Map](assets/DisparityMap.png)
