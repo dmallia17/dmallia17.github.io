@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-The great hall of projects, big and small, in no particular order.
+The great hall of projects, big and small.
 
 ### [Google Data Analytics Course Capstone: Cyclistic Bike-Share Analysis](CyclisticBike-ShareAnalysis.html)
 **Date: September 2023**
@@ -21,45 +21,51 @@ In practice, the data used for this scenario was that of Divvy's Chicago bike-sh
 Given this amount of data, SQL would have been a great choice - and I may yet revisit an alternative take on the project using SQL - but I figured I would put some of my new-found tidyverse skills to the test in R, and it was a great experience.
 
 
-### [FeudalAI](https://github.com/dmallia17/FeudalAI)
-![Feudal](assets/FeudalSetup1.png)
-###### A screenshot of an initial setup in Feudal. There are two players, Blue and Yellow, a variety of piece types denoted by two symbol identifiers (e.g. Knight 1 = K1 or Pikemen 4 = P4), a castle for each player (Cyan = the castle green/entrance, Red = heart of the castle) and terrain which makes the game more complex than Chess (green = mountains, white = rough terrain). A basic terminal app sufficed for our AI focus, so it's not quite Call of Duty. 
+### [Easy21](https://github.com/dmallia17/Easy21)
+**Date: February 2023**
+![Easy21 Value Function](assets/Easy21.png)
+###### The value function learned via Monte Carlo control for the Easy21 game (a blackjack derivative), where the back of the plot intuitively corresponds to high value states where the player has a high sum and the dealer will need to hit multiple times to come close and hopefully (for the dealer) not go bust in the process.
 
-Do you think Chess or Go are *too easy*? Well boy do I have the game for you.
-For the artificial intelligence course final project, I teamed up with my
-good friend Artjom to work on creating AI for the board game Feudal, a
-Chess-like game (see
-[Feudal on Wikipedia](https://en.wikipedia.org/wiki/Feudal_(game))) with a
-number of different complications: an initial piece placement phase (unlike
-the predetermined setup in Chess), a wide variety of piece types and
-movement patterns, terrain which can restrict attack and defense, the
-presence of castles which can be captured by the enemy to win the game, as
-well as the possibility of moving up to ALL of your pieces in a single turn.
-The last component (read as *enormous branching factor*) was certainly going
-to complicate our plan to work up from search-based agents to reinforcement
-learning (RL) if there was time.
+When I did an independent study in reinforcement learning (RL), I watched my
+way through David Silver's famous and excellent course on RL on
+[YouTube](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ).
+At the time I did some other small projects to get hands on experience with
+implementing RL algorithms, and so I filed away the Easy21 assignment he
+assigned in that course for revisiting. More recently, wanting a refresh on RL
+and a fun project for myself, I took on implementing a solution to the
+assignment in Python and was reminded of why RL can be so fun: watching your
+agent learn how to comprehensively contend with an environment is just so
+compelling. Sure, the challenge wasn't on the order of *Go* but it's fun to
+see what you can get up to with a little Python and a laptop.
 
-Ultimately we implemented game AI depending on
-two major components. First, we employed local search (hill-climbing and
-simulated annealing) for finding ideal initial piece placement by using some
-attack and defense heuristics; because we didn't know how these heuristics
-should be weighted for a score, we created a score optimizer for good measure
-so as to determine more suitable weights. Second, we created tree-based
-search gameplay agents: a variant of minimax using transposition tables and
-alpha-beta pruning, and a variant of Monte Carlo Tree Search making use of
-truncated gameplay (for reasonable length simulations) and parallel
-simulations (observing how hundreds or even thousands of game simulations
-could be conducted in a few seconds was addicting). Both of these approaches
-would have benefited from using a language other than Python, but it enabled
-fast development and offered handy features like generators for generating the
-vast breadth of multi-piece moves before we finally focused on just single
-piece moves for our proof of concept. While we didn't have the time to really
-get to an RL-based approach given the sheer breadth of work - we even wrote a
-gameplay viewer so we could play back AI games for review! - the project was a
-success and an absolute blast. 
+
+### [Multi-aRmed Bandits](https://github.com/dmallia17/Multi-aRmed_Bandits)
+**Date: January 2023**
+![Bandits Interface](assets/BatchScreenshot.png)
+###### A sample of my R shiny interface being used to recreate one of the bandits evaluations from the venerable Sutton and Barto Reinforcement Learning (2nd ed.) book.
+
+After a semester absorbed with simulation and completing my thesis, which
+revolved around Bayesian networks and discretization, I wanted a refresh
+on reinforcement learning (RL) and figured I could quickly skim my way
+through Richard Sutton and Andrew Barto's "Reinforcement Learning" (2nd ed.).
+I distinctly remember enjoying the second chapter when I first read it in an
+independent study, as it does a nice job of building you up to understanding
+the "full" RL problem context, and introducing you to ideas of exploration
+and estimates. Fresh from my thesis work where I had used the straightforward
+but powerful R shiny package to make an interface for working with
+Bayesian networks, I figured why not pop 2 balloons with one stone (leave the
+birds alone!) and get my RL refresh while sharpening my R / shiny skills.
+With this in mind, I made a demo GUI with which anyone could tinker and
+either re-create some of the experiments shown in the book or work on their
+own to see how the selected learning approach (estimate updates, action
+selection, and optimistic values) fairs in different problem contexts
+(stationary or non-stationary, number of arms, reward means and variances).
+Once again the shiny package made it fun to create a nice little interface,
+and R and ggplot2 (for plotting) are always satisfying.
 
 
 ### [Agent-Based Modeling of Controlling Urban Outdoor Cat Populations](https://github.com/dmallia17/SimulationFinalProject)
+**Date: December 2022**
 ![Cat Simulation](assets/SimulationScreenshot.png)
 ###### The visual browser-based interface of our cat simulation. On the right is the simulation space designed to approximate roughly five blocks in an urban residential area as might be found in Brooklyn or Queens, New York, with streets full of houses nestled between avenues with commercial areas. On the left, there are a number of sliders which offer control over simulation parameters, including the frequency with which cats are "removed" from the environment.
 
@@ -97,7 +103,47 @@ populations, etc. this testbed offers the chance to better understand the
 benefits and costs of outdoor cats in urban areas.
 
 
+### [FeudalAI](https://github.com/dmallia17/FeudalAI)
+**Date: April-May 2022**
+![Feudal](assets/FeudalSetup1.png)
+###### A screenshot of an initial setup in Feudal. There are two players, Blue and Yellow, a variety of piece types denoted by two symbol identifiers (e.g. Knight 1 = K1 or Pikemen 4 = P4), a castle for each player (Cyan = the castle green/entrance, Red = heart of the castle) and terrain which makes the game more complex than Chess (green = mountains, white = rough terrain). A basic terminal app sufficed for our AI focus, so it's not quite Call of Duty.
+
+Do you think Chess or Go are *too easy*? Well boy do I have the game for you.
+For the artificial intelligence course final project, I teamed up with my
+good friend Artjom to work on creating AI for the board game Feudal, a
+Chess-like game (see
+[Feudal on Wikipedia](https://en.wikipedia.org/wiki/Feudal_(game))) with a
+number of different complications: an initial piece placement phase (unlike
+the predetermined setup in Chess), a wide variety of piece types and
+movement patterns, terrain which can restrict attack and defense, the
+presence of castles which can be captured by the enemy to win the game, as
+well as the possibility of moving up to ALL of your pieces in a single turn.
+The last component (read as *enormous branching factor*) was certainly going
+to complicate our plan to work up from search-based agents to reinforcement
+learning (RL) if there was time.
+
+Ultimately we implemented game AI depending on
+two major components. First, we employed local search (hill-climbing and
+simulated annealing) for finding ideal initial piece placement by using some
+attack and defense heuristics; because we didn't know how these heuristics
+should be weighted for a score, we created a score optimizer for good measure
+so as to determine more suitable weights. Second, we created tree-based
+search gameplay agents: a variant of minimax using transposition tables and
+alpha-beta pruning, and a variant of Monte Carlo Tree Search making use of
+truncated gameplay (for reasonable length simulations) and parallel
+simulations (observing how hundreds or even thousands of game simulations
+could be conducted in a few seconds was addicting). Both of these approaches
+would have benefited from using a language other than Python, but it enabled
+fast development and offered handy features like generators for generating the
+vast breadth of multi-piece moves before we finally focused on just single
+piece moves for our proof of concept. While we didn't have the time to really
+get to an RL-based approach given the sheer breadth of work - we even wrote a
+gameplay viewer so we could play back AI games for review! - the project was a
+success and an absolute blast.
+
+
 ### [Road Surface Disparity Estimation](https://github.com/joshcwinton/RoadSurfaceDisparityEstimation)
+**Date: May 2020**
 ![Disparity Map](assets/DisparityMap.png)
 ###### A disparity map of a roadway scene generated via stereo reconstruction, produced by our Python implementation of a recent algorithm tailored towards road surfaces. On the left are some trees, the middle is the road and there are cars parked off to the right.
 
@@ -119,6 +165,7 @@ performance in Julia, a language that's on my to-learn list (I guess I have a
 few lists to manage here...).
 
 ### [Synthesis](https://github.com/tanj299/synthesis)
+**Date: March-May 2020**
 ![Garden](assets/Synthesis.JPG)
 ###### Isn't that the most beautiful synthesis (*cough-cough* hence the name) of nature and technology you've ever seen? This ~~monstrosity~~ beauty is the automated garden, complete with paper towels in case of water tubes gone wild, we created, all controllable via the web or mobile app.
 
@@ -144,48 +191,6 @@ I had tinkered with Arduino before this project, and working with hardware,
 from water pumps to robotic arms, is always exciting, but something about
 watching our groupmate request watering from the mobile app, and watching
 the pump kick on in my house, was simply magical.
-
-
-### [Multi-aRmed Bandits](https://github.com/dmallia17/Multi-aRmed_Bandits)
-![Bandits Interface](assets/BatchScreenshot.png)
-###### A sample of my R shiny interface being used to recreate one of the bandits evaluations from the venerable Sutton and Barto Reinforcement Learning (2nd ed.) book.
-
-After a semester absorbed with simulation and completing my thesis, which
-revolved around Bayesian networks and discretization, I wanted a refresh
-on reinforcement learning (RL) and figured I could quickly skim my way
-through Richard Sutton and Andrew Barto's "Reinforcement Learning" (2nd ed.).
-I distinctly remember enjoying the second chapter when I first read it in an
-independent study, as it does a nice job of building you up to understanding
-the "full" RL problem context, and introducing you to ideas of exploration
-and estimates. Fresh from my thesis work where I had used the straightforward
-but powerful R shiny package to make an interface for working with
-Bayesian networks, I figured why not pop 2 balloons with one stone (leave the
-birds alone!) and get my RL refresh while sharpening my R / shiny skills.
-With this in mind, I made a demo GUI with which anyone could tinker and
-either re-create some of the experiments shown in the book or work on their
-own to see how the selected learning approach (estimate updates, action
-selection, and optimistic values) fairs in different problem contexts
-(stationary or non-stationary, number of arms, reward means and variances).
-Once again the shiny package made it fun to create a nice little interface,
-and R and ggplot2 (for plotting) are always satisfying.
-
-
-### [Easy21](https://github.com/dmallia17/Easy21)
-![Easy21 Value Function](assets/Easy21.png)
-###### The value function learned via Monte Carlo control for the Easy21 game (a blackjack derivative), where the back of the plot intuitively corresponds to high value states where the player has a high sum and the dealer will need to hit multiple times to come close and hopefully (for the dealer) not go bust in the process.
-
-When I did an independent study in reinforcement learning (RL), I watched my
-way through David Silver's famous and excellent course on RL on
-[YouTube](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ).
-At the time I did some other small projects to get hands on experience with
-implementing RL algorithms, and so I filed away the Easy21 assignment he
-assigned in that course for revisiting. More recently, wanting a refresh on RL
-and a fun project for myself, I took on implementing a solution to the
-assignment in Python and was reminded of why RL can be so fun: watching your
-agent learn how to comprehensively contend with an environment is just so
-compelling. Sure, the challenge wasn't on the order of *Go* but it's fun to
-see what you can get up to with a little Python and a laptop.
-
 
 
 
