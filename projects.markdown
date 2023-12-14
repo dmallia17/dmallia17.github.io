@@ -105,7 +105,7 @@ benefits and costs of outdoor cats in urban areas.
 
 ### [FeudalAI](https://github.com/dmallia17/FeudalAI)
 **Date: April-May 2022**
-![Feudal](assets/FeudalSetup1.png)
+![FeudalAI](assets/FeudalAI.gif)
 ###### A screenshot of an initial setup in Feudal. There are two players, Blue and Yellow, a variety of piece types denoted by two symbol identifiers (e.g. Knight 1 = K1 or Pikemen 4 = P4), a castle for each player (Cyan = the castle green/entrance, Red = heart of the castle) and terrain which makes the game more complex than Chess (green = mountains, white = rough terrain). A basic terminal app sufficed for our AI focus, so it's not quite Call of Duty.
 
 Do you think Chess or Go are *too easy*? Well boy do I have the game for you.
