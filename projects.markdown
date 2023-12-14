@@ -66,7 +66,7 @@ and R and ggplot2 (for plotting) are always satisfying.
 
 ### [Agent-Based Modeling of Controlling Urban Outdoor Cat Populations](https://github.com/dmallia17/SimulationFinalProject)
 **Date: December 2022**
-![Cat Simulation](assets/SimulationScreenshot.png)
+![Cat Simulation](assets/CatSimulation.gif)
 ###### The visual browser-based interface of our cat simulation. On the right is the simulation space designed to approximate roughly five blocks in an urban residential area as might be found in Brooklyn or Queens, New York, with streets full of houses nestled between avenues with commercial areas. On the left, there are a number of sliders which offer control over simulation parameters, including the frequency with which cats are "removed" from the environment.
 
 When it came time for my friend Artjom and I to pick a project for the
